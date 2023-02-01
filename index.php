@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -46,10 +45,11 @@
       }
     </style>
 
-
+    
     <link href="jumbotron.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/22107901ed.css" crossorigin="anonymous">
   </head>
- <body>
+<body>
 
  <?php include "header.php"; ?>
 <main role="main">

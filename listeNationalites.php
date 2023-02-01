@@ -48,6 +48,7 @@
 
     
     <link href="jumbotron.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://kit.fontawesome.com/22107901ed.css" crossorigin="anonymous">
   </head>
  <body>
 
@@ -69,22 +70,23 @@
         <div class="col-3"><a href="" class='btn btn-success'><i class="fas fa-plus-circle"></i>Créer une Nationalité</a></div>
    
       </div>
-      <table class="table">
+      <table class="table table-hover table-striped">
       <thead class="thead-dark">
-          <tr>
-          <th scope="col">Numéro</th>
-          <th scope="col">Libellé</th>
-          <th scope="col">Action</th>
+          <tr class="d-flex">
+          <th scope="col" class="col-md-2">Numéro</th>
+          <th scope="col" class="col-md-8">Libellé</th>
+          <th scope="col" class="col-md-2">Action</th>
           </tr>
       </thead>
       <tbody>
           <?php
           foreach($lesNationalite as $nationalite)
           {
-              echo "<tr>";
-              echo "<td>$nationalite->num</td>";
-              echo "<td>$nationalite->libelle</td>";
-              echo "<td></td>";
+              echo "<tr class='d-flex'>";
+              echo "<td class='col-md-2'>$nationalite->num</td>";
+              echo "<td class='col-md-8'>$nationalite->libelle</td>";
+              echo "<td class='col-md-2'><a href='' class='btn btn-primary'><i class='fas fa-pen'></i></a>
+                    <a href='' class='btn btn-danger'><i class='far fa-trash-alt'></i></a></td>";
               echo "</tr>";
           }
           ?>
@@ -95,8 +97,6 @@
 
 <?php include "footer.php"; ?>
 
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 
   
 
