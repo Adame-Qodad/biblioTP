@@ -62,33 +62,37 @@
 
        ?>
 
-<main role="main">
 
-    <table class="table">
-    <thead class="thead-dark">
-        <tr>
-        <th scope="col">Numéro</th>
-        <th scope="col">Libellé</th>
-        <th scope="col">Action</th>
-        </tr>
-    </thead>
-    <tbody>
-        <?php
-        foreach($lesNationalite as $nationalite)
-        {
-            echo "<tr>";
-            echo "<td>$nationalite->num</td>";
-            echo "<td>$nationalite->libelle</td>";
-            echo "<td>$nationalite</td>";
-            echo "</tr>";
-        }
-        ?>
+  <div class="container mt-5">
+      <div class="row pt-4">
+        <div class="col-9"><h2>Liste des Nationalités</h2></div>
+        <div class="col-3"><a href="" class='btn btn-success'><i class="fas fa-plus-circle"></i>Créer une Nationalité</a></div>
+   
+      </div>
+      <table class="table">
+      <thead class="thead-dark">
+          <tr>
+          <th scope="col">Numéro</th>
+          <th scope="col">Libellé</th>
+          <th scope="col">Action</th>
+          </tr>
+      </thead>
+      <tbody>
+          <?php
+          foreach($lesNationalite as $nationalite)
+          {
+              echo "<tr>";
+              echo "<td>$nationalite->num</td>";
+              echo "<td>$nationalite->libelle</td>";
+              echo "<td></td>";
+              echo "</tr>";
+          }
+          ?>
+      </table>
+  </div>
+</tbody>
 
-    </tbody>
-    </table>
 
-
-</main>
 <?php include "footer.php"; ?>
 
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
