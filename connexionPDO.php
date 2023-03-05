@@ -1,8 +1,8 @@
 <?php
-$hostnom = 'host=btssio.dedyn.io';
-$usernom = 'QODADAD';
-$password = '19/12/2005';
-$bdd = 'QODADAD_Livres';
+$hostnom = 'host=localhost';
+$usernom = 'root';
+$password = '';
+$bdd = 'biblio';
 
 try {
     $monPdo = new PDO("mysql:$hostnom;dbname=$bdd;charset=utf8", $usernom, $password);

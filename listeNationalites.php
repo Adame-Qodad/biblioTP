@@ -34,7 +34,7 @@
               echo "<tr class='d-flex'>";
               echo "<td class='col-md-2'>$nationalite->num</td>";
               echo "<td class='col-md-8'>$nationalite->libelle</td>";
-              echo "<td class='col-md-2'><a href='' class='btn btn-primary'><i class='fas fa-pen'></i></a>
+              echo "<td class='col-md-2'><a href='formModifNatio.php?num=$nationalite->num' class='btn btn-primary'><i class='fas fa-pen'></i></a>
                     <a href='' class='btn btn-danger'><i class='far fa-trash-alt'></i></a></td>";
               echo "</tr>";
           }

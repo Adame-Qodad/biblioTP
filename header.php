@@ -88,5 +88,7 @@
         </form>
       </div>
     </nav>
-
+    <?php
+    include "connexionPDO.php";
+    ?>
 </body>
